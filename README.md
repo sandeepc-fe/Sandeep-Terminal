@@ -27,3 +27,8 @@ Next.js App Router starter with backend route handlers for Polygon.
 - Route Handlers keep the key server-side.
 - Static files belong in `public/`.
 - If a route returns `mock`, the Polygon request failed or the env var was not loaded.
+
+## Live data note
+- `/api/quote` now prefers Polygon snapshot data.
+- `/api/candles` now prefers Polygon aggs data.
+- If you still see `mock`, check the deployed env vars and redeploy.
