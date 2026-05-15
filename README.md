@@ -11,11 +11,11 @@ Next.js App Router starter with backend route handlers for Polygon.
    npm run dev
    ```
 
-## Deploy
-- Push to GitHub.
-- Import into Vercel.
-- Set `POLYGON_API_KEY` and `POLYGON_BASE_URL` in Vercel environment variables.
-- Do not put secret keys in client code.
+## Deploy to Vercel
+1. Push the repo to GitHub.
+2. Import it into Vercel.
+3. Add `POLYGON_API_KEY` and `POLYGON_BASE_URL` in Vercel Environment Variables.
+4. Redeploy.
 
 ## Routes
 - `/api/health`
@@ -26,3 +26,4 @@ Next.js App Router starter with backend route handlers for Polygon.
 ## Notes
 - Route Handlers keep the key server-side.
 - Static files belong in `public/`.
+- If a route returns `mock`, the Polygon request failed or the env var was not loaded.
